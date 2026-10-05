@@ -9,13 +9,19 @@ Computer Science and Information Engineering graduate from National Cheng Kung U
      alt="Frame-wise detector vs. temporal refinement"
      width="800">
 
-A two-person course project on baseball bat endpoint localization, focusing on unstable frame-wise detections during fast swings.
+- **Built a baseball bat keypoint detection and temporal-refinement pipeline**
+  - Used YOLOv8-pose to detect bat head and tail keypoints
+  - Used a 31-frame BiGRU to refine frame-wise keypoint predictions
 
-**My work:** YOLO-based detection, dataset preparation and splits, synthetic 3D-to-2D training data, BiGRU temporal refinement, RAFT integration, and experiment analysis. I later audited and rebuilt the feature pipeline so that the temporal model used only information available at inference time.
+- **Generated synthetic training data from 3D baseball swing motion data**
+  - Projected 3D bat trajectories into 2D views
+  - Added noise and missing keypoints to simulate detector errors and missed detections during pretraining
 
-**Result:** On 15 held-out test swings, the no-flow temporal refiner reduced tail RMSE from **19.956 px to 17.278 px (13.42%)**. Most of the improvement came from correcting large detector errors; adding RAFT reduced RMSE only slightly further to **17.177 px**.
+- **Reduced tail localization error on test swing videos**
+  - Reduced RMSE from **19.956 px to 17.278 px (13.42%)** on 15 test swings
+  - Most of the improvement came from frames with large detector errors; the temporal refiner was not consistently better on every frame.
 
-**Limitation:** Refinement did not improve every frame, and the results do not support an occlusion-specific solution.
+*Completed as a two-person course project; the bullets above summarizes my contributions.*
 
 [View the project on GitHub →](https://github.com/thy9164/baseball-bat-temporal-refinement)
 
