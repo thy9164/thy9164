@@ -1,4 +1,8 @@
-## Hi there 👋
+# Hung-Yao Tsai
+
+Computer Science graduate from National Cheng Kung University (NCKU), interested in computer vision and machine learning for baseball and sports applications. I enjoy building practical systems from video data, from pose-based motion analysis to temporal refinement of visual detections, while remaining open to broader CV/ML and software engineering work.
+
+## Selected Projects
 
 <!--
 **thy9164/thy9164** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
