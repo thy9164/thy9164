@@ -31,15 +31,26 @@ Computer Science and Information Engineering graduate from National Cheng Kung U
 
 <img src="https://raw.githubusercontent.com/thy9164/pitcher-motion-analysis/main/assets/pitch_analysis_demo.gif"
      alt="Pitcher Motion Analysis demo"
-     width="800">
+     width="900">
 
-An undergraduate project for analyzing baseball pitching motion from ordinary side-view video. The original project was completed by a two-person team; I independently developed the pitching-analysis system shown here, while my teammate built a separate batting-analysis system.
+- **Built a pitching motion analysis system for ordinary side-view videos**
+  - Used MediaPipe Pose to extract 2D body landmarks and motion features
 
-**What I built:** A MediaPipe Pose–based pipeline that detects three pitching events — **Foot Contact, Maximum External Rotation, and Ball Release** — using 2D landmark motion, joint geometry, and rule-based logic. I also added lead-knee analysis, hip-center trajectory visualization, pitching-phase segmentation, and a PyQt GUI for reviewing the detected events and motion features.
+- **Designed logic to estimate three key pitching events**
+  - **Foot Contact:** used lead-foot motion, velocity, and landing behavior
+  - **Maximum External Rotation:** used 2D throwing-forearm orientation as a timing proxy
+  - **Ball Release:** estimated release timing from arm geometry without detecting the ball
 
-**Validation:** In a later evaluation on six additional pitching clips, **4/6 Foot Contact predictions** fell inside the annotated first-contact range. For **MER and Ball Release, all 6 predictions** were either inside the annotated range or within one frame of the nearest boundary.
+- **Added motion-analysis features and an interactive review interface**
+  - Visualized lead-knee angle and extension, hip-center trajectory, and pitching phases
+  - Supported frame-by-frame review and direct navigation to detected pitching events
 
-**Limitation:** The method relies on monocular 2D pose estimates. MER is a timing proxy rather than a direct measurement of shoulder external rotation, and Ball Release is inferred from arm geometry rather than direct ball tracking.
+- **Evaluated the event-estimation logic on six pitching clips**
+  - Foot Contact: predictions in **4 of 6 clips** fell within the frames manually annotated as first contact
+  - MER and Ball Release: in all **6 clips**, predictions fell within the manually annotated frame range or **1 frame outside it**
+  - Results are based on only six clips, so this should be viewed as a small-scale evaluation
+
+*Two-person undergraduate project; I independently developed the pitching-analysis system shown here, while my teammate developed a separate batting-analysis system.*
 
 [View the project on GitHub →](https://github.com/thy9164/pitcher-motion-analysis)
 
