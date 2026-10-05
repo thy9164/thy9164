@@ -21,7 +21,7 @@ Computer Science and Information Engineering graduate from National Cheng Kung U
   - Reduced RMSE from **19.956 px to 17.278 px (13.42%)** on 15 test swings
   - Most of the improvement came from frames with large detector errors; the temporal refiner was not consistently better on every frame.
 
-*Completed as a two-person course project; the bullets above summarizes my contributions.*
+*Completed as a two-person course project; the bullets above summarize my contributions.*
 
 [View the project on GitHub →](https://github.com/thy9164/baseball-bat-temporal-refinement)
 
@@ -53,18 +53,3 @@ Computer Science and Information Engineering graduate from National Cheng Kung U
 *Two-person undergraduate project; I independently developed the pitching-analysis system shown here, while my teammate developed a separate batting-analysis system.*
 
 [View the project on GitHub →](https://github.com/thy9164/pitcher-motion-analysis)
-
-<!--
-**thy9164/thy9164** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
