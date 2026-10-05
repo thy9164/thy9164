@@ -1,6 +1,6 @@
 # Hung-Yao Tsai
 
-Computer Science and Information Engineering graduate from National Cheng Kung University (NCKU), with interests in computer vision and machine learning, especially for baseball and sports video analysis. My projects have explored pose-based pitching analysis and temporal refinement of bat keypoint detection. I am also interested in broader computer vision, machine learning, and software engineering problems.
+Computer Science and Information Engineering graduate from National Cheng Kung University (NCKU), with interests in computer vision and machine learning, especially for baseball and sports video analysis. My projects have explored pose-based pitching analysis and temporal refinement of bat keypoint detection. I am also interested in broader computer vision, machine learning, and software engineering work.
 
 ## Selected Projects
 ### Baseball Bat Keypoint Detection and Temporal Refinement
